@@ -25,10 +25,10 @@ class ReservationRequest extends FormRequest
     {
         return [
             'id_reservation' => 'required',
-            'id_client' => 'required',
             'id_restaurant' => 'required',
             'date' => 'required',
             'price' => 'required',
+            'cant_chairs' => 'required',
         ];
     }
 }
