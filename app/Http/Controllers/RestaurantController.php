@@ -45,6 +45,7 @@ class RestaurantController extends Controller
         Restaurant::create($request->validated());
         return back()->with('status', 'Restaurante generado con éxito');
     }
+    
 
     /**
      * Display the specified resource.
