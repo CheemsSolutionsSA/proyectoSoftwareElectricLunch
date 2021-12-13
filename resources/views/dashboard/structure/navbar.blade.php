@@ -12,7 +12,7 @@
           <a class="nav-link" href="{{route('client.index')}}">Clientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('reservation.index')}}">Resevaciones</a>
+          <a class="nav-link" href="{{route('reservation.index')}}">Reservaciones</a>
         </li>
       </ul>
     </div>

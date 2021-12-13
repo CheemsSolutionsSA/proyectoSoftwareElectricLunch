@@ -15,7 +15,7 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        $reservations = Reservation::orderBy('id', 'ASC')->paginate(10);
+        $reservations = Reservation::orderBy('id', 'ASC')->paginate(5);
 
         return view('dashboard.reservation.index', [
             'reservations' => $reservations,
