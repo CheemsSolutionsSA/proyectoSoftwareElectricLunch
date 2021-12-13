@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Reservation;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Restaurant extends Model
 {
@@ -13,8 +14,13 @@ class Restaurant extends Model
         'name',
         'NIT',
         'address',
-        'phone_number', 
+        'phone_number',
         'email',
         'capacity',
     ];
+
+    public function reservation()
+    {
+        return $this->hasMany(Reservation::class);
+    }
 }
