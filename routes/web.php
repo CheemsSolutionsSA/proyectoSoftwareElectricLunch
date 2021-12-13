@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\RestaurantController;
+use App\Http\Controllers\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,5 @@ Route::get('/', function () {
 Route::prefix('dashboard')->group(function () {
     Route::resource('restaurant', RestaurantController::class);
     Route::resource('client', ClientController::class);
+    Route::resource('reservation', ReservationController::class);
 });
