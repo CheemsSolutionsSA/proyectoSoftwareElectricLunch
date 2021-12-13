@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\RestaurantController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\RestaurantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,5 @@ Route::get('/', function () {
 
 Route::prefix('dashboard')->group(function () {
     Route::resource('restaurant', RestaurantController::class);
+    Route::resource('client', ClientController::class);
 });
