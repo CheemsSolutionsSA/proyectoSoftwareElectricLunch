@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Restaurant;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
 use App\Http\Requests\ReservationRequest;
@@ -29,8 +30,10 @@ class ReservationController extends Controller
      */
     public function create()
     {
+        $restaurants = Restaurant::pluck('id', 'name');
         return view('dashboard.reservation.create', [
             'reservation' => new Reservation(),
+            'restaurants' => $restaurants,
         ]);
     }
 
@@ -54,7 +57,9 @@ class ReservationController extends Controller
      */
     public function show(Reservation $reservation)
     {
-        return view('dashboard.reservation.show', ['reservation' => $reservation]);
+        return view('dashboard.reservation.show', [
+            'reservation' => $reservation,
+        ]);
     }
 
     /**
@@ -65,7 +70,9 @@ class ReservationController extends Controller
      */
     public function edit(Reservation $reservation)
     {
-        return view('dashboard.reservation.edit', ['reservation' => $reservation]);
+        return view('dashboard.reservation.edit', [
+            'reservation' => $reservation,
+        ]);
     }
 
     /**
@@ -75,8 +82,10 @@ class ReservationController extends Controller
      * @param  \App\Models\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function update(ReservationRequest $request, Reservation $reservation)
-    {
+    public function update(
+        ReservationRequest $request,
+        Reservation $reservation
+    ) {
         $reservation->update($request->validated());
         return back()->with('status', 'Reservación modificada con éxito');
     }
