@@ -70,8 +70,11 @@ class ReservationController extends Controller
      */
     public function edit(Reservation $reservation)
     {
+        $restaurants = Restaurant::pluck('id', 'name');
+
         return view('dashboard.reservation.edit', [
             'reservation' => $reservation,
+            'restaurants' => $restaurants,
         ]);
     }
 
