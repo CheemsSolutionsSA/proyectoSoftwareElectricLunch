@@ -14,8 +14,7 @@
             <select class="custom-select" name="id_restaurant" id="id_restaurant" aria-label="Default">
                 <option selected disabled>Selecciona una opción</option>
                 @foreach ($restaurants as $name => $id)
-                    <option {{ $reservation->id_restaurant == $id ? 'selected="selected"' : '' }}
-                        value="{{ $id }}">
+                    <option value="{{ $id }}">
                         {{ $name }}
                     </option>
                 @endforeach
