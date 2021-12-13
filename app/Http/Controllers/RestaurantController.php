@@ -15,9 +15,10 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        $restaurant = Restaurant::orderBy('id', 'ASC')->paginate(10);
+        $restaurants = Restaurant::orderBy('name', 'ASC')->paginate(1);
+
         return view('dashboard.restaurant.index', [
-            'restaurant' => $restaurant,
+            'restaurants' => $restaurants,
         ]);
     }
 
@@ -44,6 +45,7 @@ class RestaurantController extends Controller
         Restaurant::create($request->validated());
         return back()->with('status', 'Restaurante generado con éxito');
     }
+    
 
     /**
      * Display the specified resource.
@@ -76,7 +78,7 @@ class RestaurantController extends Controller
      */
     public function update(RestaurantRequest $request, Restaurant $restaurant)
     {
-        $restaurant->update($request->validate());
+        $restaurant->update($request->validated());
         return back()->with('status', 'Restaurante modificado con éxito');
     }
 
