@@ -26,16 +26,22 @@
                     <td>{{ $restaurant->capacity }}</td>
                     <td><a href="{{ route('restaurant.edit', $restaurant->id) }}" class="btn btn-info">Editar</a></td>
                     <td><a href="{{ route('restaurant.show', $restaurant->id) }}" class="btn btn-info">Ver</a></td>
-                    <td><button data-toggle="modal" class="btn btn-danger" data-bs-toggle="modal"
-                            data-target="#exampleModal" data-id="{{ $restaurant->id }}">Eliminar</button></td>
+                    <form action="{{ route('restaurant.destroy', $restaurant->id)}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <td><button href="{{ route('restaurant.show', $restaurant->id) }}" class="btn btn-danger">Eliminar</button></td>
+                    </form>
+                    
                 </tr>
             @endforeach
 
             </tfoot>
+            
     </table>
+    {{ $restaurants-> links()}}
 @endsection
 
-{{ $restaurants-> links()}}
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
