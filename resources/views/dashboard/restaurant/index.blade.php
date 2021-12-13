@@ -26,7 +26,7 @@
                     <td>{{ $restaurant->capacity }}</td>
                     <td><a href="{{ route('restaurant.edit', $restaurant->id) }}" class="btn btn-info">Editar</a></td>
                     <td><a href="{{ route('restaurant.show', $restaurant->id) }}" class="btn btn-info">Ver</a></td>
-                    <td><button data-toggle="modal" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                    <td><button data-toggle="modal" class="btn btn-danger" data-bs-toggle="modal"
                             data-target="#exampleModal" data-id="{{ $restaurant->id }}">Eliminar</button></td>
                 </tr>
             @endforeach
@@ -35,7 +35,7 @@
     </table>
 @endsection
 
-{{ $restaurants->links() }}
+{{ $restaurants-> links()}}
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -63,21 +63,3 @@
     </div>
 </div>
 
-<script>
-    window.onload = function() {
-
-        $('#exampleModal').on('show.bs.modal', function(event) {
-            // Button that triggered the modal
-            var button = $(event.relatedTarget)
-            var id = button.data('id')
-            action = $('#deletePost').attr('data-action').slice(0, -1)
-            action += id
-            console.log(action)
-            $('#deletePost').attr('action', action)
-            var modal = $(this)
-            modal.find('.modal-title').text('Vas a eliminar la categoría: ' + id)
-
-        })
-
-    }
-</script>

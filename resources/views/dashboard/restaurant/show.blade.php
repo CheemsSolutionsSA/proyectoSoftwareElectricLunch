@@ -25,6 +25,6 @@
             placeholder="capacity" value="{{ $restaurant->capacity }}">
     </div>
     <div>
-        <a class="btn btn-danger btn-sm" href="{{ URL::previous() }}">Aceptar</a>
+        <a class="btn btn-info btn-sm" href="{{ URL::previous() }}">Aceptar</a>
     </div>
 @endsection
