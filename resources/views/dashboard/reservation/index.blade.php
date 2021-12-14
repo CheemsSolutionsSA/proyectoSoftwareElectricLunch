@@ -1,7 +1,8 @@
 @extends('dashboard.master')
 @section('content')
-    <a href="{{ route('reservation.create') }}" class="btn btn-info btn-small mb-3">Crear Reserva</a>
-    <h6>Lista de reservas</h6>
+    <div class="mb-3 row">
+        <h1 class="mx-auto">Lista de reservas</h1>
+    </div>
     <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
@@ -34,6 +35,7 @@
 
             </tfoot>
     </table>
+    <a href="{{ route('reservation.create') }}" class="btn btn-info btn-small mb-3">Crear Reserva</a>
     {{ $reservations->links() }}
 
 @endsection

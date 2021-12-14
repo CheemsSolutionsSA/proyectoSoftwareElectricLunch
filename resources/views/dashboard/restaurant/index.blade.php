@@ -1,7 +1,8 @@
 @extends('dashboard.master')
-@section('content')
-    <a href="{{ route('restaurant.create') }}" class="btn btn-info btn-small mb-3">Create Restaurant</a>
-    <h6>List Restaurants</h6>
+@section('content')  
+    <div class="mb-3 row">
+        <h1 class="mx-auto">Lista de restaurantes</h1>
+    </div>
     <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
@@ -35,8 +36,8 @@
                 </tr>
             @endforeach
 
-            </tfoot>
-            
+            </tfoot>           
     </table>
+    <a href="{{ route('restaurant.create') }}" class="btn btn-info btn-small mb-3">Crear Restaurante</a>
     {{ $restaurants-> links()}}
 @endsection
