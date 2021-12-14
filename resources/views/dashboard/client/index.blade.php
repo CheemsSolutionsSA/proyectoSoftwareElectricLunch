@@ -1,7 +1,8 @@
 @extends('dashboard.master')
 @section('content')
-    <a href="{{ route('client.create') }}" class="btn btn-info btn-small mb-3">Crear Cliente</a>
-    <h6>Lista de clientes</h6>
+    <div class="mb-3 row">
+        <h1 class="mx-auto">Lista de clientes</h1>
+    </div>
     <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
@@ -33,6 +34,7 @@
 
             </tfoot>
     </table>
+    <a href="{{ route('client.create') }}" class="btn btn-info btn-small mb-3">Crear Cliente</a>
     {{ $clients-> links()}}
 @endsection
 
