@@ -27,10 +27,12 @@
         <div class="mb-3 row">
             <label for="id" class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-7">
-                <input readonly class="form-control" type="text" name="password" id="password" placeholder="password"
+                <input readonly type="tect" id="form3Example4" class="form-control form-control-lg"
+                placeholder="Enter password"
                     value="{{ $user->password }}">
             </div>
         </div>
+        
 
     </div>
 

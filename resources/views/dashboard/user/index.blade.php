@@ -8,7 +8,6 @@
             <tr>
                 <th>Nombre</th>
                 <th>Email</th>
-                <th>Password</th>
             </tr>
         </thead>
         <tbody>
@@ -16,7 +15,6 @@
                 <tr>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
-                    <td>{{ $user->password }}</td>
                     <td><a href="{{ route('user.show', $user->id) }}" class="btn btn-info">Ver</a></td>
                 </tr>
             @endforeach
