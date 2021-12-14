@@ -58,7 +58,7 @@ fecha: 14/12/21
 2. Qué haré hoy: Gestión de roles y trabajo colaborativo para la implementación del patrón de diseño
 3. Dificultades: Entendimiento e implementación del patrón observer con la comunicación de la base de datos
 
-**********************************************************************************************+
+**********************************************************************************************
 
 Desarrollador : Hector David Rubio Tabares
 
@@ -118,7 +118,7 @@ fecha: 14/12/21
 2. Qué haré hoy: Mejoras del frontend y navegabilidad de la pagina
 3. Dificultades: Problemas con JQuery y manejo de Bootstrap
 
-**********************************************************************************************+
+**********************************************************************************************
 
 Desarrollador : Christian Daniel Padilla
 
@@ -132,8 +132,8 @@ fecha: 28/11/21
 fecha: 29/11/21
 
 1. Qué hice ayer: Reunión con el equipo para el planing poker
-2. Qué haré hoy: Creación del repositorio
-3. Dificultades: No teníamos planeado inicialmente la organización en git
+2. Qué haré hoy: Creación de historias de usuario
+3. Dificultades: Entendimiento de algunas funcionalidades
 
 
 fecha: 07/12/21
@@ -146,34 +146,34 @@ fecha: 07/12/21
 fecha: 10/12/21
 
 1. Qué hice ayer: N/A
-2. Qué haré hoy: Crear el proyecto y subirlo al repositorio
+2. Qué haré hoy: Clonar el proyecto a mi equipo
 3. Dificultades: Clonarlo con problemas en el GitIgnore
 
 
 fecha: 11/12/21
 
-1. Qué hice ayer: Crear el proyecto y subirlo al repositorio
+1. Qué hice ayer: Clonar el proyecto a mi equipo
 2. Qué haré hoy: Crear el primer CRUD (Restaurantes)
 3. Dificultades: JQuery no funcionó en primera instancia
 
 
 fecha: 12/12/21
 
-1. Qué hice ayer: Crear el primer CRUD (Restaurantes)
-2. Qué haré hoy: Mejoras del CRUD con frontend
-3. Dificultades: Problemas con la comunicación de la base de datos
+1. Qué hice ayer: Crear el CRUD de reservas
+2. Qué haré hoy: Implementacion del diseño de la base de datos con sus respectivas migraciones
+3. Dificultades: Intermitencia del servicio electrico
 
 
 fecha: 13/12/21
 
-1. Qué hice ayer: Mejoras del CRUD con frontend
-2. Qué haré hoy: Trabajo colaborativo para la implementación del patrón de diseño
-3. Dificultades: Entendimiento del observer en laravel y dificultades con la interacción del observer con los otros modelos
+1. Qué hice ayer: Planeacion de la base de datos
+2. Qué haré hoy: Implementacion del diseño de la base de datos con sus respectivas migraciones
+3. Dificultades: Llaves foraneas y su uso con el modelo actual
 
 
 
 fecha: 14/12/21
 
-1. Qué hice ayer: Trabajo colaborativo para la implementación del patrón de diseño
-2. Qué haré hoy: Gestión de roles y trabajo colaborativo para la implementación del patrón de diseño
+1. Qué hice ayer: Implementacion del diseño de la base de datos con sus respectivas migraciones
+2. Qué haré hoy: Trabajo colaborativo para la implementación del patrón de diseño
 3. Dificultades: Entendimiento e implementación del patrón observer con la comunicación de la base de datos
