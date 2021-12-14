@@ -2,8 +2,9 @@
 
 namespace App\Observers;
 
-use App\Models\Client;
 use App\Models\Restaurant;
+use App\Models\Reservation;
+use Illuminate\Support\Facades\DB;
 
 class RestaurantObserver
 {
@@ -15,7 +16,17 @@ class RestaurantObserver
      */
     public function created(Restaurant $restaurant)
     {
+        $clients = DB::table('clients')->select('name', 'email')->get();
+        foreach ($clients as $client) {
+            $to = $client->email;
+            $subject = "Se creó un nuevo restaurante";
+            $message = "Hola " .$client->name." se creó el restaurante: ".$restaurant->name. " ve a visitarlo, correo instantaneo de Electric Lunch";
+            $headers = "De: Electric Lunch Team";
+            mail($to,$subject,$message,$headers);
+        }
     }
+
+
 
     /**
      * Handle the Restaurant "updated" event.
@@ -35,7 +46,6 @@ class RestaurantObserver
      */
     public function deleted(Restaurant $restaurant)
     {
-        //
     }
 
     /**
