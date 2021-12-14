@@ -22,12 +22,28 @@
                 </select>
             </div>
         </div>
+<<<<<<< HEAD
         <div class="mb-3 row">
             <label for="staticEmail" class="col-sm-2 col-form-label">Fecha reserva</label>
             <div class="col-sm-7">
                 <input class="form-control" type="date" name="date" id="date" placeholder="Fecha reserva"
                     value="{{ old('date', $reservation->date) }}">
             </div>
+=======
+    </div>
+    <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-7">
+            <input class="form-control" type="email" name="email" id="email" placeholder="Email"
+                value="{{ old('email', $reservation->email) }}">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Fecha reserva</label>
+        <div class="col-sm-7">
+            <input class="form-control" type="date" name="date" id="date" placeholder="Fecha reserva"
+                value="{{ old('date', $reservation->date) }}">
+>>>>>>> parent of 20e5cbc (Organizando cosas)
         </div>
         <div class="mb-3 row">
             <label for="price" class="col-sm-2 col-form-label">Precio</label>

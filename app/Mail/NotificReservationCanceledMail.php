@@ -11,7 +11,7 @@ class NotificReservationCanceledMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = "Reserva Cancelada";
+    public $subject = "Reserva realizada";
 
     /**
      * Create a new message instance.
