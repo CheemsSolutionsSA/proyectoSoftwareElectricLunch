@@ -31,6 +31,7 @@ class ClientObserver
         $user = User::create([
             'name' => $client->name,
             'email' => $client->email,
+            'rol_id' => "2",
             'password' => Hash::make($password),
         ]);
 

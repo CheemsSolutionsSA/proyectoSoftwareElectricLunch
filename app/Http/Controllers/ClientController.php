@@ -8,10 +8,12 @@ use App\Http\Requests\ClientRequest;
 
 class ClientController extends Controller
 {
+
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware(['auth','rol.admin']);
     }
+
     /**
      * Display a listing of the resource.
      *

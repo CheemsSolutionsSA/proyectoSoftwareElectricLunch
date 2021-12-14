@@ -8,9 +8,11 @@ use App\Http\Requests\RestaurantRequest;
 
 class RestaurantController extends Controller
 {
+
     public function __construct()
     {
-        $this->middleware('auth');
+       
+        $this->middleware(['auth','rol.admin'])->except(['index','show']);
     }
     /**
      * Display a listing of the resource.
