@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Client;
 use App\Models\Restaurant;
+use App\Observers\ClientObserver;
 use App\Observers\RestaurantObserver;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
@@ -28,5 +30,6 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         Restaurant::observe(RestaurantObserver::class);
+        Client::observe(ClientObserver::class);
     }
 }
