@@ -1,26 +1,179 @@
 *********************************************************************************************
 
 Scrum Master: Juan José Paz García
+
 fecha: 28/11/21
 
-1. Qué hice ayer:
-2. Qué haré hoy:
-3. Dificultades:
+1. Qué hice ayer: Formalización de la reunión del planing poker
+2. Qué haré hoy: Reunión con el equipo para el planing poker
+3. Dificultades: Ingreso inicial de la aplicación
+
+
+fecha: 29/11/21
+
+1. Qué hice ayer: Reunión con el equipo para el planing poker
+2. Qué haré hoy: Creación del repositorio
+3. Dificultades: No teníamos planeado inicialmente la organización en git
+
+
+fecha: 07/12/21
+
+1. Qué hice ayer: N/A
+2. Qué haré hoy: Reunión para definir cada uno de los módulos a crear por cada uno de los miembros
+3. Dificultades: Ninguna
+
+
+fecha: 10/12/21
+
+1. Qué hice ayer: N/A
+2. Qué haré hoy: Crear el proyecto y subirlo al repositorio
+3. Dificultades: Clonarlo con problemas en el GitIgnore
+
+
+fecha: 11/12/21
+
+1. Qué hice ayer: Crear el proyecto y subirlo al repositorio
+2. Qué haré hoy: Crear el primer CRUD (Restaurantes)
+3. Dificultades: JQuery no funcionó en primera instancia
+
+
+fecha: 12/12/21
+
+1. Qué hice ayer: Crear el primer CRUD (Restaurantes)
+2. Qué haré hoy: Mejoras del CRUD con frontend
+3. Dificultades: Problemas con la comunicación de la base de datos
+
+
+fecha: 13/12/21
+
+1. Qué hice ayer: Mejoras del CRUD con frontend
+2. Qué haré hoy: Trabajo colaborativo para la implementación del patrón de diseño
+3. Dificultades: Entendimiento del observer en laravel y dificultades con la interacción del observer con los otros modelos
+
+
+
+fecha: 14/12/21
+
+1. Qué hice ayer: Trabajo colaborativo para la implementación del patrón de diseño
+2. Qué haré hoy: Gestión de roles y trabajo colaborativo para la implementación del patrón de diseño
+3. Dificultades: Entendimiento e implementación del patrón observer con la comunicación de la base de datos
 
 **********************************************************************************************+
 
 Desarrollador : Hector Davis Rubio Tabares
+
 fecha: 28/11/21
 
-1. Qué hice ayer:
-2. Qué haré hoy:
-3. Dificultades:
+1. Qué hice ayer: Formalización de la reunión del planing poker
+2. Qué haré hoy: Reunión con el equipo para el planing poker
+3. Dificultades: Ingreso inicial de la aplicación
+
+
+fecha: 29/11/21
+
+1. Qué hice ayer: Reunión con el equipo para el planing poker
+2. Qué haré hoy: Creación del repositorio
+3. Dificultades: No teníamos planeado inicialmente la organización en git
+
+
+fecha: 07/12/21
+
+1. Qué hice ayer: N/A
+2. Qué haré hoy: Reunión para definir cada uno de los módulos a crear por cada uno de los miembros
+3. Dificultades: Ninguna
+
+
+fecha: 10/12/21
+
+1. Qué hice ayer: N/A
+2. Qué haré hoy: Crear el proyecto y subirlo al repositorio
+3. Dificultades: Clonarlo con problemas en el GitIgnore
+
+
+fecha: 11/12/21
+
+1. Qué hice ayer: Crear el proyecto y subirlo al repositorio
+2. Qué haré hoy: Crear el primer CRUD (Restaurantes)
+3. Dificultades: JQuery no funcionó en primera instancia
+
+
+fecha: 12/12/21
+
+1. Qué hice ayer: Crear el primer CRUD (Restaurantes)
+2. Qué haré hoy: Mejoras del CRUD con frontend
+3. Dificultades: Problemas con la comunicación de la base de datos
+
+
+fecha: 13/12/21
+
+1. Qué hice ayer: Mejoras del CRUD con frontend
+2. Qué haré hoy: Trabajo colaborativo para la implementación del patrón de diseño
+3. Dificultades: Entendimiento del observer en laravel y dificultades con la interacción del observer con los otros modelos
+
+
+
+fecha: 14/12/21
+
+1. Qué hice ayer: Trabajo colaborativo para la implementación del patrón de diseño
+2. Qué haré hoy: Gestión de roles y trabajo colaborativo para la implementación del patrón de diseño
+3. Dificultades: Entendimiento e implementación del patrón observer con la comunicación de la base de datos
 
 **********************************************************************************************+
 
 Desarrollador : Christian Daniel Padilla
+
 fecha: 28/11/21
 
-1. Qué hice ayer:
-2. Qué haré hoy:
-3. Dificultades:
+1. Qué hice ayer: Formalización de la reunión del planing poker
+2. Qué haré hoy: Reunión con el equipo para el planing poker
+3. Dificultades: Ingreso inicial de la aplicación
+
+
+fecha: 29/11/21
+
+1. Qué hice ayer: Reunión con el equipo para el planing poker
+2. Qué haré hoy: Creación del repositorio
+3. Dificultades: No teníamos planeado inicialmente la organización en git
+
+
+fecha: 07/12/21
+
+1. Qué hice ayer: N/A
+2. Qué haré hoy: Reunión para definir cada uno de los módulos a crear por cada uno de los miembros
+3. Dificultades: Ninguna
+
+
+fecha: 10/12/21
+
+1. Qué hice ayer: N/A
+2. Qué haré hoy: Crear el proyecto y subirlo al repositorio
+3. Dificultades: Clonarlo con problemas en el GitIgnore
+
+
+fecha: 11/12/21
+
+1. Qué hice ayer: Crear el proyecto y subirlo al repositorio
+2. Qué haré hoy: Crear el primer CRUD (Restaurantes)
+3. Dificultades: JQuery no funcionó en primera instancia
+
+
+fecha: 12/12/21
+
+1. Qué hice ayer: Crear el primer CRUD (Restaurantes)
+2. Qué haré hoy: Mejoras del CRUD con frontend
+3. Dificultades: Problemas con la comunicación de la base de datos
+
+
+fecha: 13/12/21
+
+1. Qué hice ayer: Mejoras del CRUD con frontend
+2. Qué haré hoy: Trabajo colaborativo para la implementación del patrón de diseño
+3. Dificultades: Entendimiento del observer en laravel y dificultades con la interacción del observer con los otros modelos
+
+
+
+fecha: 14/12/21
+
+1. Qué hice ayer: Trabajo colaborativo para la implementación del patrón de diseño
+2. Qué haré hoy: Gestión de roles y trabajo colaborativo para la implementación del patrón de diseño
+3. Dificultades: Entendimiento e implementación del patrón observer con la comunicación de la base de datos
