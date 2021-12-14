@@ -47,7 +47,7 @@
     <div id="app">
         <nav class="navbar z-ind navbar-expand-md  bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                     Electric Lunch
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

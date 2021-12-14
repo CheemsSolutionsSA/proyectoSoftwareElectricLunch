@@ -32,7 +32,7 @@
 
 <body>
     @include('dashboard.structure.navbar')
-    <div class="container">
+    <div class="container" >
         <div class="jumbotron">
             @yield('content')
         </div>

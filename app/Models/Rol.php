@@ -2,20 +2,17 @@
 
 namespace App\Models;
 
-use App\Models\Rol;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Client extends Model
+class Rol extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'name',
-        'identification',
-        'address',
-        'phone_number',
-        'email'
+        'description'
     ];
 
 }

@@ -15,6 +15,10 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <a href="dashboard/restaurant">Restaurant</a>
+                    <a href="dashboard/client">Cliente</a>
+                    <a href="dashboard/reservation">Reservation</a>
+                    <a href="dashboard/user">Users</a>
                 </div>
             </div>
         </div>
