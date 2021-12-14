@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\RestaurantController;
@@ -25,3 +26,4 @@ Route::prefix('dashboard')->group(function () {
     Route::resource('client', ClientController::class);
     Route::resource('reservation', ReservationController::class);
 });
+
