@@ -18,7 +18,7 @@ class ReservationObserver
     public function created(Reservation $reservation)
     {
         $correo = new NotificationReservationMail($reservation->id_restaurant, $reservation->date, $reservation->cant_chairs, $reservation->price);
-        Mail::to($reservation->email)->send($correo);
+        Mail::to(auth()->user()->email)->send($correo);
     }
 
     /**
@@ -41,7 +41,7 @@ class ReservationObserver
     public function deleted(Reservation $reservation)
     {
         $correo = new NotificReservationCanceledMail;
-        Mail::to($reservation->email)->send($correo);
+        Mail::to(auth()->user()->email)->send($correo);
     }
 
     /**
