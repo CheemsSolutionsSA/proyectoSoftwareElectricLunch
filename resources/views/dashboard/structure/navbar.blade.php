@@ -6,20 +6,24 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- Left Side Of Navbar -->
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav me-auto btn-group">
             <li class="nav-item active">
-                <a class="nav-link" href="{{ route('restaurant.index') }}">Restaurantes<span
-                        class="sr-only"></span></a>
+                <a class="nav-link btn btn-outline-secondary {{ request()->routeIs('restaurant.index') ? 'active' : '' }}"
+                    href="{{ route('restaurant.index') }}">Restaurantes<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('client.index') }}">Clientes</a>
+                <a class="nav-link  btn btn-outline-secondary {{ request()->routeIs('client.index') ? 'active' : '' }}"
+                    href="{{ route('client.index') }}">Clientes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('reservation.index') }}">Reservaciones</a>
+                <a class="nav-link btn btn-outline-secondary {{ request()->routeIs('reservation.index') ? 'active' : '' }}"
+                    href="{{ route('reservation.index') }}">Reservaciones</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('user.index') }}">Usuarios</a>
+                <a class="nav-link btn btn-outline-secondary {{ request()->routeIs('user.index') ? 'active' : '' }}"
+                    href="{{ route('user.index') }}">Usuarios</a>
             </li>
+
         </ul>
 
         <!-- Right Side Of Navbar -->
@@ -28,7 +32,7 @@
             @guest
                 @if (Route::has('login'))
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="nav-link " href="{{ route('login') }}">{{ __('Login') }}</a>
                     </li>
                 @endif
 
@@ -45,8 +49,9 @@
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                 document.getElementById('logout-form').submit();">
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                                                                                                     document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}
                         </a>
 
