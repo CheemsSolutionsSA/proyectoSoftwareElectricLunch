@@ -10,13 +10,14 @@
     <div class="mb-3 row">
         <label for="staticEmail" class="col-sm-2 col-form-label">Identificación</label>
         <div class="col-sm-7">
-            <input class="form-control" type="text" name="identification" id="identification" placeholder="identification"
-                value="{{ old('identification', $client->identification) }}">
+            <input class="form-control" type="text" name="identification" id="identification"
+                placeholder="identification" value="{{ old('identification', $client->identification) }}">
         </div>
     </div>
     <div class="mb-3 row">
         <label for="staticEmail" class="col-sm-2 col-form-label">Dirección</label>
         <div class="col-sm-7">
+
             <input class="form-control" type="text" name="address" id="address" placeholder="Dirección"
                 value="{{ old('address', $client->address) }}">
         </div>
@@ -40,3 +41,12 @@
     <button type="submit" class="btn btn-success btn-sm">Aceptar</button>
     <a class="btn btn-danger btn-sm" href="{{ URL::previous() }}">Cancelar</a>
 </div>
+
+<script>
+    window.onload = function() {
+
+        if ("client.create" != "{{ Request::route()->getName() }}") {
+            document.getElementById("email").setAttribute('readonly', true)
+        }
+    }
+</script>
