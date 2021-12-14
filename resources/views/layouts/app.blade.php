@@ -25,13 +25,9 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-<<<<<<< HEAD
+
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     Electric Lunch
-=======
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
->>>>>>> parent of 20e5cbc (Organizando cosas)
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

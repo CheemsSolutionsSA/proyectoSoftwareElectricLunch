@@ -22,49 +22,26 @@
                 </select>
             </div>
         </div>
-<<<<<<< HEAD
-        <div class="mb-3 row">
-            <label for="staticEmail" class="col-sm-2 col-form-label">Fecha reserva</label>
-            <div class="col-sm-7">
-                <input class="form-control" type="date" name="date" id="date" placeholder="Fecha reserva"
-                    value="{{ old('date', $reservation->date) }}">
-            </div>
-=======
-    </div>
-    <div class="mb-3 row">
-        <label for="email" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-7">
-            <input class="form-control" type="email" name="email" id="email" placeholder="Email"
-                value="{{ old('email', $reservation->email) }}">
-        </div>
-    </div>
-    <div class="mb-3 row">
-        <label for="email" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-7">
-            <input class="form-control" type="email" name="email" id="email" placeholder="Email"
-                value="{{ old('email', $reservation->email) }}">
-        </div>
-    </div>
+
     <div class="mb-3 row">
         <label for="staticEmail" class="col-sm-2 col-form-label">Fecha reserva</label>
         <div class="col-sm-7">
             <input class="form-control" type="date" name="date" id="date" placeholder="Fecha reserva"
                 value="{{ old('date', $reservation->date) }}">
->>>>>>> parent of 20e5cbc (Organizando cosas)
         </div>
-        <div class="mb-3 row">
-            <label for="price" class="col-sm-2 col-form-label">Precio</label>
-            <div class="col-sm-7">
-                <input class="form-control" type="text" name="price" id="price" placeholder="Precio"
-                    value="{{ old('price', $reservation->price) }}">
-            </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="price" class="col-sm-2 col-form-label">Precio</label>
+        <div class="col-sm-7">
+            <input class="form-control" type="text" name="price" id="price" placeholder="Precio"
+                value="{{ old('price', $reservation->price) }}">
         </div>
-        <div class="mb-3 row">
-            <label for="cant_chairs" class="col-sm-2 col-form-label">numero de sillas</label>
-            <div class="col-sm-7">
-                <input class="form-control" type="text" name="cant_chairs" id="cant_chairs" placeholder="numero de sillas"
-                    value="{{ old('cant_chairs', $reservation->cant_chairs) }}">
-            </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="cant_chairs" class="col-sm-2 col-form-label">numero de sillas</label>
+        <div class="col-sm-7">
+            <input class="form-control" type="text" name="cant_chairs" id="cant_chairs" placeholder="numero de sillas"
+                value="{{ old('cant_chairs', $reservation->cant_chairs) }}">
         </div>
     </div>
     <div>

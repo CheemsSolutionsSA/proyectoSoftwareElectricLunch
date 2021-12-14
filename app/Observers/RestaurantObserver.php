@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Observers;
-
+use App\Models\User;
 use App\Models\Restaurant;
 use App\Models\Reservation;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class RestaurantObserver
 {
@@ -16,6 +17,26 @@ class RestaurantObserver
      */
     public function created(Restaurant $restaurant)
     {
+        $password = $this-> claveAleatoria();
+        $user = User::create([
+            'name' => $restaurant->name,
+            'email' => $restaurant->email,
+            'rol_id' => "3",    
+            'password' => Hash::make($password),
+        ]);
+
+        $to = $restaurant->email;
+        $subject = 'Creacion de restaurante exitosa';
+        $message =
+            'Muchas gracias ' .
+            $restaurant->name .
+            ' por registrarte a Electric Lunch, tu contraseña es : ' .
+            $password;
+        $headers = 'De: Electric Lunch Team';
+        mail($to, $subject, $message, $headers);
+
+        $user->save();
+
         $clients = DB::table('clients')
             ->select('name', 'email')
             ->get();
@@ -31,6 +52,8 @@ class RestaurantObserver
             $headers = 'De: Electric Lunch Team';
             mail($to, $subject, $message, $headers);
         }
+
+
     }
 
     /**
@@ -73,5 +96,39 @@ class RestaurantObserver
     public function forceDeleted(Restaurant $restaurant)
     {
         //
+    }
+
+    function claveAleatoria(
+        $longitud = 6,
+        $opcLetra = true,
+        $opcNumero = true,
+        $opcMayus = true,
+        $opcEspecial = false
+    ) {
+        $letras = 'abcdefghijklmnopqrstuvwxyz';
+        $numeros = '1234567890';
+        $letrasMayus = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $especiales = '|@#~$%()=^*+[]{}-_';
+        $listado = '';
+        $password = '';
+        if ($opcLetra == true) {
+            $listado .= $letras;
+        }
+        if ($opcNumero == true) {
+            $listado .= $numeros;
+        }
+        if ($opcMayus == true) {
+            $listado .= $letrasMayus;
+        }
+        if ($opcEspecial == true) {
+            $listado .= $especiales;
+        }
+
+        for ($i = 1; $i <= $longitud; $i++) {
+            $caracter = $listado[rand(0, strlen($listado) - 1)];
+            $password .= $caracter;
+            $listado = str_shuffle($listado);
+        }
+        return $password;
     }
 }

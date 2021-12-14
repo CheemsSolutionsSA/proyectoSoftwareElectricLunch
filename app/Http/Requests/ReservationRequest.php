@@ -26,7 +26,6 @@ class ReservationRequest extends FormRequest
         return [
             'id_reservation' => 'required',
             'id_restaurant' => 'required',
-            'email' => 'required',
             'date' => 'required',
             'price' => 'required',
             'cant_chairs' => 'required',

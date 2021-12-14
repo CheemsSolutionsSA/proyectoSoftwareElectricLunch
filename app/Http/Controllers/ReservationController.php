@@ -9,6 +9,10 @@ use App\Http\Requests\ReservationRequest;
 
 class ReservationController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth','rol.client']);
+    }
     /**
      * Display a listing of the resource.
      *

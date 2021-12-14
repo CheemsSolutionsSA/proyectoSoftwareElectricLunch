@@ -8,14 +8,12 @@ use App\Http\Requests\RestaurantRequest;
 
 class RestaurantController extends Controller
 {
-<<<<<<< HEAD
+
     public function __construct()
     {
-       /*  $this->middleware(['auth','rol.admin']); */
-        $this->middleware(['auth','rol.admin']);
+       
+        $this->middleware(['auth','rol.admin'])->except(['index','show']);
     }
-=======
->>>>>>> parent of 20e5cbc (Organizando cosas)
     /**
      * Display a listing of the resource.
      *
